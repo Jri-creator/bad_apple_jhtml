@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BadApple HTML V2</title>
-        <script src="https://werwolf2303.de/GBLib/main.js"></script>
-        <script src="app.js"></script>
-    </head>
-    <body onload="initApp()"></body>
+<head>
+    <title>BadApple HTML V2</title>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // This function will run when the page is loaded
+        function initPage() {
+            create();   // Ensure create() is called first
+            initApp();  // Then initialize the app
+        }
+    </script>
+</head>
+<body onload="initPage()">  <!-- Only one body tag and onload event -->
+</body>
 </html>
