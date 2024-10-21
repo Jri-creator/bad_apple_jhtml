@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BadApple HTML V2</title>
-    <script src="main.js"></script>
-    <script src="app.js"></script>
-    <script>
-        // This function will run when the page is loaded
-        function initPage() {
-            create();   // Ensure create() is called first
-            initApp();  // Then initialize the app
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Audio Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
         }
-    </script>
+        #text-display {
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
-<body onload="initPage()">  <!-- Only one body tag and onload event -->
+<body>
+    <div id="text-display">Loading...</div>
+    <audio id="background-audio" autoplay loop>
+        <source src="audio.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -17345,3 +17345,16 @@ class Wbr {
 		}
 	}
 }
+// Initialize startstop only if Button is defined
+if (typeof Button === 'function') {
+	var startstop = new Button();
+	if (startstop) {
+		startstop.setId("control");
+		startstop.setClick(startStop);
+		startstop.create("content");
+	} else {
+		console.error("Failed to initialize startstop button");
+	}
+} else {
+	console.error("Button class is not defined in app.js");
+}

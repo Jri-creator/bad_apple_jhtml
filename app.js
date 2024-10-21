@@ -107,3 +107,13 @@ function animate() {
         image=image+1;
     }
 }
+// Ensure this code runs after DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize and define the Button class here (if it depends on DOM)
+    if (typeof Button === 'function') {
+        var startstop = new Button();
+        // Additional Button logic goes here...
+    } else {
+        console.error('Button class is not defined.');
+    }
+});
