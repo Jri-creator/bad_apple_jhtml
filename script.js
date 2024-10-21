@@ -11,7 +11,7 @@ async function displayTextFile(index) {
             throw new Error('Text file not found');
         }
         const text = await response.text();
-        textDisplay.textContent = text;
+        textDisplay.textContent = text; // Preserve formatting by using textContent
     } catch (error) {
         console.error('Error:', error);
         textDisplay.textContent = 'Error loading text file.';
