@@ -9,7 +9,7 @@ async function displayTextFile(index) {
     try {
         const response = await fetch(`txt/${index}.txt`);
         if (!response.ok) {
-            throw new Error('Text file wasn't arrayed.');
+            throw new Error('Text file was not arrayed.');
         }
         const text = await response.text();
         textDisplay.textContent = text; // Preserve formatting by using textContent
