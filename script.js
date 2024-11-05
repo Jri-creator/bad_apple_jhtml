@@ -1,7 +1,8 @@
 const textDisplay = document.getElementById('text-display');
 const totalFiles = 6572; // Total number of .txt files
 let currentFileIndex = 1;
-const displayInterval = 100; // 0.1 seconds (100 milliseconds)
+//const displayInterval = 100; // 0.1 seconds (100 milliseconds)
+const displayInterval = 50;
 
 // Function to fetch and display the text file
 async function displayTextFile(index) {
